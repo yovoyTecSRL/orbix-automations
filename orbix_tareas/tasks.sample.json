@@ -1,0 +1,18 @@
+[
+  {"id":1,"categoria":"DB","titulo":"Backup nocturno de base de datos","estado":"pending","impacto":"alto","owner":"Sofía","fecha":"2025-08-25","notas":"Automatizar con script."},
+  {"id":2,"categoria":"Sync","titulo":"Sincronizar archivos críticos","estado":"in_progress","impacto":"medio","owner":"Luis","fecha":"2025-08-25","notas":"Verificar logs de errores."},
+  {"id":3,"categoria":"Security","titulo":"Revisar logs de acceso","estado":"done","impacto":"alto","owner":"Ana","fecha":"2025-08-24","notas":"Buscar intentos fallidos."},
+  {"id":4,"categoria":"Analytics","titulo":"Actualizar dashboard de métricas","estado":"pending","impacto":"bajo","owner":"Carlos","fecha":"2025-08-25","notas":"Revisar fuentes de datos."},
+  {"id":5,"categoria":"DB","titulo":"Optimizar índices","estado":"blocked","impacto":"medio","owner":"Sofía","fecha":"2025-08-23","notas":"Esperando ventana de mantenimiento."},
+  {"id":6,"categoria":"Sync","titulo":"Verificar integridad de backups","estado":"done","impacto":"alto","owner":"Luis","fecha":"2025-08-24","notas":"Comparar hashes."},
+  {"id":7,"categoria":"Security","titulo":"Actualizar reglas de firewall","estado":"pending","impacto":"alto","owner":"Ana","fecha":"2025-08-25","notas":"Coordinar con IT."},
+  {"id":8,"categoria":"Analytics","titulo":"Exportar reporte semanal","estado":"done","impacto":"bajo","owner":"Carlos","fecha":"2025-08-24","notas":"Enviar por correo."},
+  {"id":9,"categoria":"DB","titulo":"Limpiar registros antiguos","estado":"pending","impacto":"bajo","owner":"Sofía","fecha":"2025-08-25","notas":"Script listo para ejecutar."},
+  {"id":10,"categoria":"Sync","titulo":"Sincronizar usuarios LDAP","estado":"in_progress","impacto":"medio","owner":"Luis","fecha":"2025-08-25","notas":"Requiere credenciales."},
+  {"id":11,"categoria":"Security","titulo":"Escanear vulnerabilidades","estado":"blocked","impacto":"alto","owner":"Ana","fecha":"2025-08-23","notas":"Esperando actualización de scanner."},
+  {"id":12,"categoria":"Analytics","titulo":"Revisar alertas de BI","estado":"pending","impacto":"medio","owner":"Carlos","fecha":"2025-08-25","notas":"Configurar notificaciones."},
+  {"id":13,"categoria":"DB","titulo":"Test de restauración","estado":"done","impacto":"alto","owner":"Sofía","fecha":"2025-08-24","notas":"Validar integridad."},
+  {"id":14,"categoria":"Sync","titulo":"Actualizar mirror de repositorios","estado":"pending","impacto":"bajo","owner":"Luis","fecha":"2025-08-25","notas":"Verificar espacio en disco."},
+  {"id":15,"categoria":"Security","titulo":"Cambiar contraseñas de root","estado":"pending","impacto":"alto","owner":"Ana","fecha":"2025-08-25","notas":"Política de rotación mensual."},
+  {"id":16,"categoria":"Analytics","titulo":"Comparar tendencias de tráfico","estado":"done","impacto":"medio","owner":"Carlos","fecha":"2025-08-24","notas":"Usar Google Analytics."}
+]
