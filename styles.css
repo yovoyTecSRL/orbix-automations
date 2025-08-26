@@ -1,0 +1,88 @@
+/* Orbix Night Tasks - styles.css */
+:root {
+  --bg: #f4f4f9;
+  --fg: #222;
+  --accent: #3b82f6;
+  --night-bg: #181c24;
+  --night-fg: #e0e6f0;
+  --night-accent: #60a5fa;
+  --transition: 0.3s;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  transition: background var(--transition), color var(--transition);
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: var(--accent);
+  color: #fff;
+}
+
+#toggle-night {
+  background: var(--night-accent);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+#clock {
+  font-size: 1.2rem;
+  font-family: monospace;
+  margin-left: 2rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.night {
+  background: var(--night-bg);
+  color: var(--night-fg);
+}
+
+.night header {
+  background: var(--night-accent);
+  color: #fff;
+}
+
+.night #toggle-night {
+  background: var(--accent);
+  color: #fff;
+}
+
+// Modo nocturno y reloj en vivo
+
+const body = document.body;
+const toggleNight = document.getElementById('toggle-night');
+const clock = document.getElementById('clock');
+
+// Estado inicial
+let isNight = false;
+
+// Toggle modo nocturno
+toggleNight.addEventListener('click', () => {
+  isNight = !isNight;
+  body.classList.toggle('night', isNight);
+  toggleNight.setAttribute('aria-pressed', isNight);
+  toggleNight.textContent = isNight ? 'Modo diurno' : 'Modo nocturno';
+});
+
+// Reloj en vivo
+function updateClock() {
+  const now = new Date();
+  clock.textContent = now.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+  requestAnimationFrame(updateClock);
+}
+updateClock();
